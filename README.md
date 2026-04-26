@@ -1,6 +1,6 @@
 # SQL Data Validation Project
 
-![CI Status](https://github.com/Djones-qa/sql-data-validation-project/actions/workflows/main.yml/badge.svg)
+![CI Status](https://github.com/Djones-qa/sql-data-validation-project/actions/workflows/validate.yml/badge.svg)
 ![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)
 
 A lightweight SQLite-based data validation project for an e-commerce-style dataset. The repository includes schema definition, seeded example data, validation scripts, and a pytest suite for data-quality checks.
