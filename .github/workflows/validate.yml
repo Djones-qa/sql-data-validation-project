@@ -1,0 +1,25 @@
+﻿name: Data Validation CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Build database
+        run: python scripts/setup_db.py
+      - name: Run validation checks
+        run: python scripts/run_validations.py
+      - name: Run pytest suite
+        run: pytest tests/ -v
