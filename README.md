@@ -1,5 +1,8 @@
 # SQL Data Validation Project
 
+![CI Status](https://github.com/Djones-qa/sql-data-validation-project/actions/workflows/main.yml/badge.svg)
+![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)
+
 A lightweight SQLite-based data validation project for an e-commerce-style dataset. The repository includes schema definition, seeded example data, validation scripts, and a pytest suite for data-quality checks.
 
 ## Repository Structure
@@ -93,7 +96,7 @@ git commit -m "Add README and update validation workflow"
 
 git branch -M main
 
-git remote add origin https://github.com/<your-username>/<your-repo>.git
+git remote add origin https://github.com/Djones-qa/sql-data-validation-project.git
 
 git push -u origin main
 ```
